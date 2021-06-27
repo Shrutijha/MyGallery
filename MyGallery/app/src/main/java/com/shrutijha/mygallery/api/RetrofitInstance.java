@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitInstance {
     private static Retrofit retrofit=null;
-    private static final String BASE_URL = "https://uniqueandrocode.000webhostapp.com/hiren/androidtutorial/";
+    private static final String BASE_URL = "https://picsum.photos/v2/";
     public static Retrofit getRetrofitInstance(){
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()

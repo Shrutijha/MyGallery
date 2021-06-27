@@ -7,6 +7,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface GalleryApi {
-    @GET("androidweb.php")
-    Call<List<Feed>> geImgData();
+    @GET("list?page=1")
+    Call<List<Feed>> getImgData();
 }

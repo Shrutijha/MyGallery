@@ -9,9 +9,9 @@ import com.google.gson.annotations.SerializedName;
 import com.squareup.picasso.Picasso;
 
 public class Feed {
-    @SerializedName("imageurl")
+    @SerializedName("download_url")
     public String imageurl;
-    @BindingAdapter({"imageurl"})
+    @BindingAdapter({"imageUrl"})
     public static void loadImage(ImageView imageView,String imagepath){
         Glide.with(imageView.getContext()).load(imagepath).into(imageView);
     }
