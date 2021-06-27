@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getdata() {
-        myApi=RetrofitInstance.getRetrofitInstance().create(GalleryApi.class);
+        myApi=RetrofitInstance.getRetrofitInstance(this).create(GalleryApi.class);
         Call<List<Feed>>call=myApi.getImgData();
         call.enqueue(new Callback<List<Feed>>() {
             @Override
